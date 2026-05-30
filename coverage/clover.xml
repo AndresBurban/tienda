@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1772240042303" clover="3.2.0">
+  <project timestamp="1772240042303" name="All files">
+    <metrics statements="17" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="1" elements="23" coveredelements="20" complexity="0" loc="17" ncloc="17" packages="2" files="2" classes="2"/>
+    <package name="tienda">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="database.js" path="C:\Users\ANDRES\Desktop\quinto semestre\PRUEBAS DE SOFTWARE E IMPLEMENTACIÓN\tienda\database.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="tienda.controllers">
+      <metrics statements="13" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="1"/>
+      <file name="authController.js" path="C:\Users\ANDRES\Desktop\quinto semestre\PRUEBAS DE SOFTWARE E IMPLEMENTACIÓN\tienda\controllers\authController.js">
+        <metrics statements="13" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="14" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

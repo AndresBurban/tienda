@@ -1,0 +1,22 @@
+name: E2E Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm ci
+      - name: Run E2E tests
+        # GitHub runners include Chrome; chromedriver must match. If mismatch, consider installing compatible chromedriver.
+        run: npm run test:e2e

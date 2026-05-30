@@ -1,0 +1,23 @@
+<h1>Tienda</h1>
+
+<% if(user){ %>
+    Bienvenido <%= user.username %>
+<% } %>
+
+<a href="/cart">Carrito (<%= cartCount %>)</a>
+
+<ul>
+<% products.forEach(p => { %>
+    <li>
+        <h3><%= p.name %></h3>
+        <p><%= p.description %></p>
+        <p>$<%= p.price %></p>
+        <p>Stock: <%= p.stock %></p>
+
+        <form method="POST" action="/add-to-cart">
+            <input type="hidden" name="productId" value="<%= p.id %>">
+            <button>Agregar</button>
+        </form>
+    </li>
+<% }) %>
+</ul>

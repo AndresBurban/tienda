@@ -1,0 +1,25 @@
+<h1>Carrito</h1>
+
+<a href="/">Volver</a>
+
+<% if(cart.length === 0){ %>
+    <p>Carrito vacío</p>
+<% } else { %>
+
+<ul>
+<% cart.forEach(item => { %>
+    <li>
+        <%= item.name %> |
+        Cantidad: <%= item.quantity %> |
+        Subtotal: $<%= item.price * item.quantity %>
+    </li>
+<% }) %>
+</ul>
+
+<h3>Total: $<%= total %></h3>
+
+<form method="POST" action="/checkout">
+    <button>Finalizar Compra</button>
+</form>
+
+<% } %>
