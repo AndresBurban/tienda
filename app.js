@@ -28,7 +28,7 @@ app.use((req, res, next) => {
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-//app.use(require('./routes/authRoutes'));
+app.use(require('./routes/authRoutes'));
 app.use(require('./routes/productRoutes'));
 //app.use(require('./routes/orderRoutes'));
 app.use(require('./routes/cartRoutes'));
