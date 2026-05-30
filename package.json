@@ -29,6 +29,7 @@
     "uuid": "^13.0.0"
   },
   "devDependencies": {
+    "chai": "^6.2.2",
     "chromedriver": "^147.0.4",
     "edgedriver": "^6.3.0",
     "geckodriver": "^6.1.0",
